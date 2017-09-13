@@ -1,0 +1,62 @@
+ 
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+
+	 
+<div id="menu" style="position: absolute; width: 275px; height: 28px; z-index: 1; left: 1px; top: 1px; visibility:visible; href="#"" >
+<form method="POST" action="">
+	<table height="25" bgcolor=#0066CC bordercolor=#000000 border=0 >
+	<tr>
+	    <td width="150" align=center onclick="MM_showHideLayers('sub_rota','','show');MM_showHideLayers('sub_end','','hide')"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FFFFFF">Rota</font></td>
+	    <td width="150" align=center onclick="MM_showHideLayers('sub_end','','show');MM_showHideLayers('sub_rota','','hide')"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FFFFFF">Endereço</font></td>
+	</tr>
+	</table>
+</form>
+</div>
+
+<div id="sub_end" style="position:absolute; left:2px; top:28px; width:93px; height:44px; z-index:2; visibility: hidden; " >
+<table width="853">
+<tr>
+<form method="POST" action="">
+   <td valign=top>Endereço:</td>
+   <td>
+     <input type="text" name="endereco" size="109">
+   </td>
+   <td><button name="Proc_end">Procurar</button></td>
+</form>
+</tr>
+</table>
+</div>
+ <div id="sub_rota" style="position:absolute; left:2px; top:28px; width:93px; height:44px; z-index:2; visibility: hidden; " >
+<table width="853">
+<tr>
+<form method="POST" action=""> 
+   <td valign=top>De:</td>
+   <td width="422">
+        <input type="text" name="ini" size="50">
+   </td>
+   <td valign=top>Até:</td>
+   <td>
+        <input type="text" name="end" size="50">
+   </td>
+   <td><button name="Proc_rota">Procurar</button></td>
+</form>
+</tr>
+</table>
+</div>

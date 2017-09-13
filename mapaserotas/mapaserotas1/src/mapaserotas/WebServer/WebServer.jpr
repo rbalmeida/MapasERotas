@@ -1,0 +1,1992 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.adf.dt.migration.ProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.adfdt.controller.jsf.addin.JSFProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.db.ADFStrutsProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.StrutsProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.adfdtinternal.view.faces.addin.ADFFacesLibraryMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.bm.commonIde.ProjectUpgrader" v="10.1.3.2.0"/>
+      <value n="oracle.ide.model.Project" v="10.1.3.2.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.jbo.dt.jclient.migrator.JCProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.jdeveloper.dbmodeler.migration.ProjectMigratorHelper" v="10.1.3.2.0"/>
+      <value n="oracle.jdeveloper.ejb.EjbMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.jdeveloper.offlinedb.migration.OfflineDBProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.jdevimpl.jsp.JsfLibraryMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.jdevimpl.jsp.JspMigrator" v="10.1.3.1.0"/>
+      <value n="oracle.jdevimpl.runner.RunConfigurationsMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.jdevimpl.webservices.WebServicesMigratorHelper" v="10.1.3.2.0"/>
+      <value n="oracle.tip.tools.ide.pm.addin.PMProjectMigrator" v="10.1.3.2.0"/>
+      <value n="oracle.toplink.addin.migration.TopLinkProjectMigrator" v="10.1.3.1.0"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+      <string v="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings/offlineDBContentSet"/>
+      <string v="oracle.jdeveloper.model.J2eeSettings/webContentSet"/>
+      <string v="oracle.toplink.addin.TopLinkProjectSettings/toplinkContentSet"/>
+      <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
+      <string v="oracle.tip.tools.ide.pm.addin.PMProjectSettings/Integration_Content"/>
+   </list>
+   <value n="defaultPackage" v="webserver"/>
+   <hash n="oracle.bm.commonIde.data.project.ModelerProjectSettings">
+      <hash n="modelersContentSet">
+         <list n="url-path">
+            <url path="model/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+teste_0300.html"/>
+                  <string v="+Untitled1"/>
+               </list>
+               <list n="url-path">
+                  <url path="../../../teste_web/"/>
+               </list>
+            </hash>
+         </list>
+         <list n="pattern-filters">
+            <string v="+*"/>
+         </list>
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <value n="internalEncoding" v="Cp1252"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.J2eeSettings">
+      <value n="j2eeWebAppName" v="mapaserotas-WebServer-webapp"/>
+      <value n="j2eeWebContextRoot" v="mapaserotas-WebServer-context-root"/>
+      <hash n="webContentSet">
+         <list n="url-path">
+            <url path="public_html/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+testes_031.htm"/>
+               </list>
+               <list n="url-path">
+                  <url path="../../../teste_web/"/>
+               </list>
+            </hash>
+         </list>
+         <list n="url-path"/>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings">
+      <hash n="offlineDBContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="database/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+         </hash>
+      </hash>
+      <list n="runConfigurationList">
+         <string v="Default"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <value n="id" v="Servlet Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-antlr-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-junit-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-launcher-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-swing-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Antlr-2.7.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Asm-attrs.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Asm.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="C3p0-0.9.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Cglib-2.1.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Checkstyle-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Cleanimports.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-2.1.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-logging-1.0.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Concurrent-1.3.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Connector.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Dom4j-1.6.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ehcache-1.2.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaas.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jacc-1_0-fr.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javassist.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxen-1.1-beta-7.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-cache.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-common.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-jmx.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-system.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jdbc2_0-stdext.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jgroups-2.2.8.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jta.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-3.8.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Log4j-1.2.11.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oscache-2.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Proxool-0.8.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Swarmcache-1.0rc2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Syndiag2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Versioncheck.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xerces-2.6.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-entitymanager.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-validator.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-archive-browsing.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-search.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jms.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Lucene-core-2.1.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-validator.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar3"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar3"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations.jar2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-entitymanager.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate3.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-archive-browsing.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-debug.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-gen.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-ioc.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-mail.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-pdf.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-remoting.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-ui.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Activation.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ajax4jsf-1.1.1-SNAPSHOT.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-antlr-1.6.5.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-launcher.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-nodeps.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Antlr-2.7.6.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-beanutils-1.7.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-codec-1.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-3.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-digester-1.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-el-1.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="El-api.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="El-ri.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Itext-2.0.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javax.servlet.jsp.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-aop-jdk50.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-cache-jdk50.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-ejb3-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jbpm-3.1.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcaptcha-all-1.0-RC4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jgroups.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsf-facelets.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jstl-1.1.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mail-ra.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mail.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Myfaces-api-1.1.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Myfaces-impl-1.1.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oscache-2.3.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Portlet-api-lib.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Richfaces-3.0.1-SNAPSHOT.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Servlet-api.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Spring.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Testng-4.5.1-jdk15.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Thirdparty-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="EntidadesPersistentes.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Postgresql-8.2-504.jdbc3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/hibernate3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate3.jar"/>
+               <value n="id" v="Hibernate3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/ant-1.6.5.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-1.6.5.jar"/>
+               <value n="id" v="Ant-1.6.5.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/ant-antlr-1.6.5.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-antlr-1.6.5.jar"/>
+               <value n="id" v="Ant-antlr-1.6.5.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/ant-junit-1.6.5.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-junit-1.6.5.jar"/>
+               <value n="id" v="Ant-junit-1.6.5.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/ant-launcher-1.6.5.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-launcher-1.6.5.jar"/>
+               <value n="id" v="Ant-launcher-1.6.5.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/ant-swing-1.6.5.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-swing-1.6.5.jar"/>
+               <value n="id" v="Ant-swing-1.6.5.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/antlr-2.7.6.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Antlr-2.7.6.jar"/>
+               <value n="id" v="Antlr-2.7.6.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/asm-attrs.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Asm-attrs.jar"/>
+               <value n="id" v="Asm-attrs.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/asm.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Asm.jar"/>
+               <value n="id" v="Asm.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/c3p0-0.9.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="C3p0-0.9.1.jar"/>
+               <value n="id" v="C3p0-0.9.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/cglib-2.1.3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Cglib-2.1.3.jar"/>
+               <value n="id" v="Cglib-2.1.3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/checkstyle-all.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Checkstyle-all.jar"/>
+               <value n="id" v="Checkstyle-all.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/cleanimports.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Cleanimports.jar"/>
+               <value n="id" v="Cleanimports.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/commons-collections-2.1.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-2.1.1.jar"/>
+               <value n="id" v="Commons-collections-2.1.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/commons-logging-1.0.4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-logging-1.0.4.jar"/>
+               <value n="id" v="Commons-logging-1.0.4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/concurrent-1.3.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Concurrent-1.3.2.jar"/>
+               <value n="id" v="Concurrent-1.3.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/connector.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Connector.jar"/>
+               <value n="id" v="Connector.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/dom4j-1.6.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Dom4j-1.6.1.jar"/>
+               <value n="id" v="Dom4j-1.6.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/ehcache-1.2.3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ehcache-1.2.3.jar"/>
+               <value n="id" v="Ehcache-1.2.3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jaas.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jaas.jar"/>
+               <value n="id" v="Jaas.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jacc-1_0-fr.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jacc-1_0-fr.jar"/>
+               <value n="id" v="Jacc-1_0-fr.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/javassist.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Javassist.jar"/>
+               <value n="id" v="Javassist.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jaxen-1.1-beta-7.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jaxen-1.1-beta-7.jar"/>
+               <value n="id" v="Jaxen-1.1-beta-7.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jboss-cache.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-cache.jar"/>
+               <value n="id" v="Jboss-cache.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jboss-common.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-common.jar"/>
+               <value n="id" v="Jboss-common.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jboss-jmx.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-jmx.jar"/>
+               <value n="id" v="Jboss-jmx.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jboss-system.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-system.jar"/>
+               <value n="id" v="Jboss-system.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jdbc2_0-stdext.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jdbc2_0-stdext.jar"/>
+               <value n="id" v="Jdbc2_0-stdext.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jgroups-2.2.8.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jgroups-2.2.8.jar"/>
+               <value n="id" v="Jgroups-2.2.8.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/jta.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jta.jar"/>
+               <value n="id" v="Jta.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/junit-3.8.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Junit-3.8.1.jar"/>
+               <value n="id" v="Junit-3.8.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/log4j-1.2.11.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Log4j-1.2.11.jar"/>
+               <value n="id" v="Log4j-1.2.11.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/oscache-2.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Oscache-2.1.jar"/>
+               <value n="id" v="Oscache-2.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/proxool-0.8.3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Proxool-0.8.3.jar"/>
+               <value n="id" v="Proxool-0.8.3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/swarmcache-1.0rc2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Swarmcache-1.0rc2.jar"/>
+               <value n="id" v="Swarmcache-1.0rc2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/syndiag2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Syndiag2.jar"/>
+               <value n="id" v="Syndiag2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/versioncheck.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Versioncheck.jar"/>
+               <value n="id" v="Versioncheck.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/xerces-2.6.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xerces-2.6.2.jar"/>
+               <value n="id" v="Xerces-2.6.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-3.2/lib/xml-apis.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Xml-apis.jar"/>
+               <value n="id" v="Xml-apis.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-annotations-3.3.0.GA/hibernate-annotations.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-annotations.jar"/>
+               <value n="id" v="Hibernate-annotations.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-annotations-3.3.0.GA/lib/ejb3-persistence.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ejb3-persistence.jar"/>
+               <value n="id" v="Ejb3-persistence.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-annotations-3.3.0.GA/lib/hibernate-commons-annotations.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-commons-annotations.jar"/>
+               <value n="id" v="Hibernate-commons-annotations.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-entitymanager-3.3.1.GA/hibernate-entitymanager.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-entitymanager.jar"/>
+               <value n="id" v="Hibernate-entitymanager.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-entitymanager-3.3.1.GA/lib/ejb3-persistence.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ejb3-persistence.jar1"/>
+               <value n="id" v="Ejb3-persistence.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-entitymanager-3.3.1.GA/lib/hibernate-annotations.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-annotations.jar1"/>
+               <value n="id" v="Hibernate-annotations.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-entitymanager-3.3.1.GA/lib/hibernate-commons-annotations.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-commons-annotations.jar1"/>
+               <value n="id" v="Hibernate-commons-annotations.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-entitymanager-3.3.1.GA/lib/hibernate-validator.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-validator.jar"/>
+               <value n="id" v="Hibernate-validator.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-entitymanager-3.3.1.GA/lib/jboss-archive-browsing.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-archive-browsing.jar"/>
+               <value n="id" v="Jboss-archive-browsing.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-search-3.0.0.Beta1/hibernate-search.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-search.jar"/>
+               <value n="id" v="Hibernate-search.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-search-3.0.0.Beta1/lib/ejb3-persistence.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ejb3-persistence.jar2"/>
+               <value n="id" v="Ejb3-persistence.jar2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-search-3.0.0.Beta1/lib/hibernate-commons-annotations.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-commons-annotations.jar2"/>
+               <value n="id" v="Hibernate-commons-annotations.jar2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-search-3.0.0.Beta1/lib/jms.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jms.jar"/>
+               <value n="id" v="Jms.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-search-3.0.0.Beta1/lib/lucene-core-2.1.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Lucene-core-2.1.0.jar"/>
+               <value n="id" v="Lucene-core-2.1.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-validator-3.0.0.GA/hibernate-validator.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-validator.jar1"/>
+               <value n="id" v="Hibernate-validator.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-validator-3.0.0.GA/lib/ejb3-persistence.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ejb3-persistence.jar3"/>
+               <value n="id" v="Ejb3-persistence.jar3"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/hibernate-validator-3.0.0.GA/lib/hibernate-commons-annotations.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-commons-annotations.jar3"/>
+               <value n="id" v="Hibernate-commons-annotations.jar3"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/hibernate/lib/ejb3-persistence.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ejb3-persistence.jar4"/>
+               <value n="id" v="Ejb3-persistence.jar4"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/hibernate/lib/hibernate-annotations.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-annotations.jar2"/>
+               <value n="id" v="Hibernate-annotations.jar2"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/hibernate/lib/hibernate-entitymanager.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-entitymanager.jar1"/>
+               <value n="id" v="Hibernate-entitymanager.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/hibernate/lib/hibernate3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate3.jar1"/>
+               <value n="id" v="Hibernate3.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/hibernate/lib/jboss-archive-browsing.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-archive-browsing.jar1"/>
+               <value n="id" v="Jboss-archive-browsing.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam-debug.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam-debug.jar"/>
+               <value n="id" v="Jboss-seam-debug.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam-gen.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam-gen.jar"/>
+               <value n="id" v="Jboss-seam-gen.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam-ioc.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam-ioc.jar"/>
+               <value n="id" v="Jboss-seam-ioc.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam-mail.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam-mail.jar"/>
+               <value n="id" v="Jboss-seam-mail.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam-pdf.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam-pdf.jar"/>
+               <value n="id" v="Jboss-seam-pdf.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam-remoting.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam-remoting.jar"/>
+               <value n="id" v="Jboss-seam-remoting.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam-ui.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam-ui.jar"/>
+               <value n="id" v="Jboss-seam-ui.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/jboss-seam.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-seam.jar"/>
+               <value n="id" v="Jboss-seam.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/activation.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Activation.jar"/>
+               <value n="id" v="Activation.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/ajax4jsf-1.1.1-SNAPSHOT.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ajax4jsf-1.1.1-SNAPSHOT.jar"/>
+               <value n="id" v="Ajax4jsf-1.1.1-SNAPSHOT.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/ant-antlr-1.6.5.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-antlr-1.6.5.jar1"/>
+               <value n="id" v="Ant-antlr-1.6.5.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/ant-launcher.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-launcher.jar"/>
+               <value n="id" v="Ant-launcher.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/ant-nodeps.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant-nodeps.jar"/>
+               <value n="id" v="Ant-nodeps.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/ant.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ant.jar"/>
+               <value n="id" v="Ant.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/antlr-2.7.6.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Antlr-2.7.6.jar1"/>
+               <value n="id" v="Antlr-2.7.6.jar1"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/commons-beanutils-1.7.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-beanutils-1.7.0.jar"/>
+               <value n="id" v="Commons-beanutils-1.7.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/commons-codec-1.3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-codec-1.3.jar"/>
+               <value n="id" v="Commons-codec-1.3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/commons-collections-3.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-collections-3.1.jar"/>
+               <value n="id" v="Commons-collections-3.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/commons-digester-1.6.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-digester-1.6.jar"/>
+               <value n="id" v="Commons-digester-1.6.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/commons-el-1.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-el-1.0.jar"/>
+               <value n="id" v="Commons-el-1.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/commons-lang-2.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.1.jar"/>
+               <value n="id" v="Commons-lang-2.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/el-api.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="El-api.jar"/>
+               <value n="id" v="El-api.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/el-ri.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="El-ri.jar"/>
+               <value n="id" v="El-ri.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/hibernate-all.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hibernate-all.jar"/>
+               <value n="id" v="Hibernate-all.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/itext-2.0.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Itext-2.0.1.jar"/>
+               <value n="id" v="Itext-2.0.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/javax.servlet.jsp.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Javax.servlet.jsp.jar"/>
+               <value n="id" v="Javax.servlet.jsp.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jboss-aop-jdk50.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-aop-jdk50.jar"/>
+               <value n="id" v="Jboss-aop-jdk50.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jboss-cache-jdk50.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-cache-jdk50.jar"/>
+               <value n="id" v="Jboss-cache-jdk50.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jboss-ejb3-all.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-ejb3-all.jar"/>
+               <value n="id" v="Jboss-ejb3-all.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jbpm-3.1.4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jbpm-3.1.4.jar"/>
+               <value n="id" v="Jbpm-3.1.4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jcaptcha-all-1.0-RC4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jcaptcha-all-1.0-RC4.jar"/>
+               <value n="id" v="Jcaptcha-all-1.0-RC4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jgroups.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jgroups.jar"/>
+               <value n="id" v="Jgroups.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jsf-facelets.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jsf-facelets.jar"/>
+               <value n="id" v="Jsf-facelets.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/jstl-1.1.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jstl-1.1.0.jar"/>
+               <value n="id" v="Jstl-1.1.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/mail-ra.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mail-ra.jar"/>
+               <value n="id" v="Mail-ra.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/mail.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mail.jar"/>
+               <value n="id" v="Mail.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/myfaces-api-1.1.4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Myfaces-api-1.1.4.jar"/>
+               <value n="id" v="Myfaces-api-1.1.4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/myfaces-impl-1.1.4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Myfaces-impl-1.1.4.jar"/>
+               <value n="id" v="Myfaces-impl-1.1.4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/oscache-2.3.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Oscache-2.3.2.jar"/>
+               <value n="id" v="Oscache-2.3.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/portlet-api-lib.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Portlet-api-lib.jar"/>
+               <value n="id" v="Portlet-api-lib.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/richfaces-3.0.1-SNAPSHOT.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Richfaces-3.0.1-SNAPSHOT.jar"/>
+               <value n="id" v="Richfaces-3.0.1-SNAPSHOT.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/servlet-api.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Servlet-api.jar"/>
+               <value n="id" v="Servlet-api.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/spring.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Spring.jar"/>
+               <value n="id" v="Spring.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/testng-4.5.1-jdk15.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Testng-4.5.1-jdk15.jar"/>
+               <value n="id" v="Testng-4.5.1-jdk15.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../JavaClasses/Hibernate/jboss-seam-1.2.1.GA/lib/thirdparty-all.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Thirdparty-all.jar"/>
+               <value n="id" v="Thirdparty-all.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../EntidadesPersistentes/deploy/EntidadesPersistentes.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="EntidadesPersistentes.jar"/>
+               <value n="id" v="EntidadesPersistentes.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../../../jdbc/postgresql-8.2-504.jdbc3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Postgresql-8.2-504.jdbc3.jar"/>
+               <value n="id" v="Postgresql-8.2-504.jdbc3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+         </list>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Servlet Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-antlr-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-junit-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-launcher-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-swing-1.6.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Antlr-2.7.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Asm-attrs.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Asm.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="C3p0-0.9.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Cglib-2.1.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Checkstyle-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Cleanimports.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-2.1.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-logging-1.0.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Concurrent-1.3.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Connector.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Dom4j-1.6.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ehcache-1.2.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaas.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jacc-1_0-fr.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javassist.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxen-1.1-beta-7.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-cache.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-common.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-jmx.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-system.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jdbc2_0-stdext.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jgroups-2.2.8.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jta.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Junit-3.8.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Log4j-1.2.11.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oscache-2.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Proxool-0.8.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Swarmcache-1.0rc2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Syndiag2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Versioncheck.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xerces-2.6.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Xml-apis.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-entitymanager.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-validator.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-archive-browsing.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-search.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jms.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Lucene-core-2.1.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-validator.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar3"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-commons-annotations.jar3"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ejb3-persistence.jar4"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-annotations.jar2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-entitymanager.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate3.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-archive-browsing.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-debug.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-gen.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-ioc.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-mail.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-pdf.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-remoting.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam-ui.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-seam.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Activation.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ajax4jsf-1.1.1-SNAPSHOT.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-antlr-1.6.5.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-launcher.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant-nodeps.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Ant.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Antlr-2.7.6.jar1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-beanutils-1.7.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-codec-1.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-collections-3.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-digester-1.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-el-1.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="El-api.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="El-ri.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hibernate-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Itext-2.0.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javax.servlet.jsp.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-aop-jdk50.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-cache-jdk50.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-ejb3-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jbpm-3.1.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jcaptcha-all-1.0-RC4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jgroups.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsf-facelets.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jstl-1.1.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mail-ra.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mail.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Myfaces-api-1.1.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Myfaces-impl-1.1.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oscache-2.3.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Portlet-api-lib.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Richfaces-3.0.1-SNAPSHOT.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Servlet-api.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Spring.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Testng-4.5.1-jdk15.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Thirdparty-all.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="EntidadesPersistentes.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Postgresql-8.2-504.jdbc3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="classes/"/>
+   </hash>
+   <hash n="oracle.tip.tools.ide.pm.addin.PMProjectSettings">
+      <hash n="Integration_Content">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.toplink.addin.TopLinkProjectSettings">
+      <hash n="toplinkContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="toplink/"/>
+         </list>
+      </hash>
+   </hash>
+</jpr:project>

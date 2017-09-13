@@ -1,0 +1,122 @@
+<html >
+<head>
+	<style type="text/css" user-select="none" >
+		body {margin:0; padding:0;}
+		.drag{background-color:red; cursor:hand; position:relative; z-index: 100;}
+	</style>
+	<script type="text/javascript">
+		var dragobject= {
+			z: 0,
+			x: 0,
+			y: 0,
+			offsetx : null,
+			offsety : null,
+			targetobj : null,
+			dragapproved : 0,
+			initialize: function() {
+				document.onmousedown = this.drag;
+				document.onmouseup = function() {
+					this.dragapproved = 0;
+				alert( "Eixo X = " + this.x + ", Eixo Y = " + this.y)
+				}
+			},
+			/*
+				método 1: cada figura pode sofrer o drag
+			*/
+/*			drag: function(e) {
+				var evtobj = window.event ? window.event : e;
+				this.targetobj = window.event ? event.srcElement : e.target;
+				if (this.targetobj.className == "drag") {
+					this.dragapproved = 1;
+					if (isNaN(parseInt(this.targetobj.style.left))) {
+						this.targetobj.style.left=0;
+					}
+					if (isNaN(parseInt(this.targetobj.style.top))) {
+						this.targetobj.style.top=0;
+					}
+					this.offsetx = parseInt(this.targetobj.style.left);
+					this.offsety = parseInt(this.targetobj.style.top);
+					this.x = evtobj.clientX;
+					this.y = evtobj.clientY;
+					if (evtobj.preventDefault) {
+						evtobj.preventDefault();
+					}
+					document.onmousemove = dragobject.moveit;
+
+				}
+			},
+*/			
+                        /*
+				método 2: o div sofre o drag quando qualquer figura é "arrastada"
+				para o div poder fazer isso, o "position" dele é setado para "absolute"
+			*/
+			drag: function(e) {
+				var evtobj = window.event ? window.event : e;
+				this.targetobj = window.event ? event.srcElement : e.target;
+				if (this.targetobj.className == "drag") {
+					var dragobj = this.targetobj.parentNode;
+					dragobj.style.position = "absolute";
+					this.dragapproved = 1;
+					if (isNaN(parseInt(dragobj.style.left))) {
+						dragobj.style.left=0;
+					}
+					if (isNaN(parseInt(dragobj.style.top))) {
+						dragobj.style.top=0;
+					}
+					this.offsetx = parseInt(dragobj.style.left);
+					this.offsety = parseInt(dragobj.style.top);
+					this.x = evtobj.clientX;
+					this.y = evtobj.clientY;
+					if (evtobj.preventDefault) {
+						evtobj.preventDefault();
+					}
+					document.onmousemove = dragobject.moveit;
+				}
+			},
+
+			/* moveit para metodo 1 */
+/*			moveit: function(e) {
+				var evtobj = window.event ? window.event : e;
+				if (this.dragapproved==1) {
+					this.targetobj.style.left = this.offsetx + evtobj.clientX-this.x + "px";
+					this.targetobj.style.top  = this.offsety + evtobj.clientY-this.y + "px";
+					return false;
+				}
+			} 
+*/
+			/* moveit para metodo 2 */
+			moveit: function(e) {
+				var evtobj = window.event ? window.event : e;
+				var dragobj = this.targetobj.parentNode;
+				if (this.dragapproved==1) {
+					window.status = dragobj.style.left;
+					dragobj.style.left = this.offsetx + evtobj.clientX-this.x + "px";
+					dragobj.style.top  = this.offsety + evtobj.clientY-this.y + "px";
+					return false;
+				}
+			}
+
+		};
+		/*
+			para um melhor controle, a inicialização deve ser executada somente depois que a página está carregada
+		*/
+		onload = function () {
+			dragobject.initialize();
+			/*
+				para que todas as imagens possam ser "arrastadas", elas precisam estar com a class "drag".
+				se a classe "drag" for colocada somente no div, então só o ele poderá ser "arrastado".
+				deixei duas alternativas para os métodos drag e o movit (alí em cima)... comente um e descomente o outro para você ver o comportamento da aplicação.
+			*/
+			var imgs = document.getElementsByTagName("img");
+			for (var i=0; i<imgs.length; i++) {
+				imgs.item(i).className = "drag";
+			}
+		}
+	</script>
+</head>
+<body style="overflow:hidden;">
+	<div style="width:1040px;height:1040px"  >
+<img src ="teste_02\x0y0.jpg" class="drag"><img src ="teste_02\x1y0.jpg" class="drag"><img src ="teste_02\x2y0.jpg" class="drag"><img src ="teste_02\x3y0.jpg" class="drag"><BR><img src ="teste_02\x0y1.jpg" class="drag"><img src ="teste_02\x1y1.jpg" class="drag"><img src ="teste_02\x2y1.jpg" class="drag"><img src ="teste_02\x3y1.jpg" class="drag"><BR><img src ="teste_02\x0y2.jpg" class="drag"><img src ="teste_02\x1y2.jpg" class="drag"><img src ="teste_02\x2y2.jpg" class="drag"><img src ="teste_02\x3y2.jpg" class="drag"><BR><img src ="teste_02\x0y3.jpg" class="drag"><img src ="teste_02\x1y3.jpg" class="drag"><img src ="teste_02\x2y3.jpg" class="drag"><img src ="teste_02\x3y3.jpg" class="drag"><BR>
+	</div>
+</body>
+</html>

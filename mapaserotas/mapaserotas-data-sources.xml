@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-PostgreConn">
+        <connection-factory factory-class="org.postgresql.Driver" user="postgres" password="->DataBase_User_6OZ7mJao9Q7U9cXSXSHGW_zteXrUG5NjsTA0Zh4lhKM=" url="jdbc:postgresql://localhost:5432/bd2"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-PostgreConn" jndi-name="jdbc/PostgreConnDS" connection-pool-name="jdev-connection-pool-PostgreConn"/>
+    <connection-pool name="jdev-connection-pool-Agenda">
+        <connection-factory factory-class="org.postgresql.Driver" user="postgres" password="->DataBase_User_WImuLxyMUmeTtGKqSBVnJkriABndUEYmggnBudckpeY=" url="jdbc:postgresql://localhost:5432/bd2"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Agenda" jndi-name="jdbc/AgendaDS" connection-pool-name="jdev-connection-pool-Agenda"/>
+    <connection-pool name="jdev-connection-pool-AgendaConn">
+        <connection-factory factory-class="org.postgresql.Driver" user="postgres" password="->DataBase_User_jreCtARi0a58QsepA5dtVJJIbkXaF4XY5zhPCPEkAVM=" url="jdbc:postgresql:bd2"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-AgendaConn" jndi-name="jdbc/AgendaConnDS" connection-pool-name="jdev-connection-pool-AgendaConn"/>
+</data-sources>
